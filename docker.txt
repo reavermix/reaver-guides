@@ -1,0 +1,16 @@
+Create a network for the containers:
+docker network create --driver bridge isolated
+
+See the details about the network:
+docker network inspect mm_net
+
+Get Logs from a docker node
+docker logs --details mm_app
+
+Get a bash console to the docker node
+docker exec -it eis-app /bin/bash
+ Deploy the container
+docker-compose up -d
+
+Shutdown the container
+docker-compose down
